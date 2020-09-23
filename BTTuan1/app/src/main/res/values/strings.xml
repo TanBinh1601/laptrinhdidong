@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BTTuan1</string>
+    <string name="a"><![CDATA[<]]></string>
+    <string name="rung">Rung</string>
+    <string name="ImLang">Im lặng</string>
+    <string name="BinhThuong">Âm thanh</string>
+    <string name="Setting">Cài Đặt</string>
+    <string name="internet">Internet</string>
+    <string name="wifi">Wifi</string>
+    <string name="nut_1">nut 1</string>
+</resources>

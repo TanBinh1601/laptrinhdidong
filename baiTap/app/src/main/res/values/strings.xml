@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">baiTap</string>
+    <string name="them">Thêm</string>
+    <string name="xoa">Xóa</string>
+</resources>
