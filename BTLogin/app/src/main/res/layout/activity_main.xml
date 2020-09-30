@@ -139,13 +139,12 @@
             android:textColor="@color/white"/>
 
     </RelativeLayout>
-
-    <TextView
-        android:layout_alignParentRight="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif"
-        android:text="1811505310304 - Nguyễn Tấn Bình"
-        android:textColor="@color/white"
-        android:textSize="12sp" />
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Mai Xuân Duy - 1811505310309"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
 </RelativeLayout>
