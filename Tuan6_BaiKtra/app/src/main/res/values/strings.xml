@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Tuan6_BaiKtra</string>
+        <string name="name">Tấn Bình</string>
+        <string name="photo">Photo</string>
+        <string name="kt150">150</string>
+        <string name="followers">Followers</string>
+        <string name="sl1601">1601</string>
+        <string name="following">Following</string>
+        <string name="sl101">101</string>
+        <string name="todo">TODO</string>
+        <string name="mail">tanbinhjk1601@gmail.com</string>
+        <string name="todo1">TODO</string>
+        <string name="follow_me">Follow Me</string>
+        <string name="show_all_comments">Show all comments</string>
+        <string name="sdt">+8466 837 259</string>
+        <string name="todo2">TODO</string>
+        <string name="todo3">TODO</string>
+        <string name="addgroup">Add to group</string>
+</resources>
