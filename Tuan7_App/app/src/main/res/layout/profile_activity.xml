@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -56,9 +57,9 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="350dp"
-            android:layout_height="100dp"
+            android:layout_height="80dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="245dp"
+            android:layout_marginTop="260dp"
             android:background="@color/white">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -145,7 +146,7 @@
             <ImageView
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/mail" />
+                android:src="@drawable/ic_mail" />
             <TextView
                 android:textStyle="bold"
                 android:layout_gravity="center_vertical"
@@ -156,7 +157,7 @@
                 android:paddingStart="20dp" />
         </LinearLayout>
         <LinearLayout
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal"
             android:paddingLeft="25dp"
             android:layout_width="match_parent"
@@ -168,7 +169,6 @@
                 android:src="@drawable/ic_phone" />
             <TextView
                 android:textStyle="bold"
-
                 android:layout_gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -177,7 +177,7 @@
                 android:paddingStart="20dp" />
         </LinearLayout>
         <LinearLayout
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal"
             android:paddingLeft="25dp"
             android:layout_width="match_parent"
@@ -190,7 +190,6 @@
                 android:contentDescription="TODO" />
             <TextView
                 android:textStyle="bold"
-
                 android:layout_gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -199,7 +198,7 @@
                 android:paddingStart="20dp" />
         </LinearLayout>
         <LinearLayout
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal"
             android:paddingLeft="25dp"
             android:layout_width="match_parent"
@@ -211,7 +210,6 @@
                 android:src="@drawable/ic_friends"/>
             <TextView
                 android:textStyle="bold"
-
                 android:layout_gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -235,22 +233,13 @@
             android:text="Log out"
             android:textColor="@color/red" />
     </RelativeLayout>
-    <RelativeLayout
+    <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/endblue"
-        android:layout_alignParentBottom="true">
-        <ImageButton
-            android:id="@+id/btn_home"
-            android:layout_width="205dp"
-            android:layout_height="50dp"
-            android:src="@drawable/ic_home"
-            android:background="@color/endblue"/>
-        <ImageButton
-            android:layout_width="205dp"
-            android:layout_height="50dp"
-            android:layout_alignParentRight="true"
-            android:src="@drawable/ic_account_info"
-            android:background="@color/endblue"/>
-    </RelativeLayout>
+        android:id="@+id/bottom_nv"
+        app:itemBackground="@color/colorPrimary"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_nv"
+        android:layout_alignParentBottom="true"/>
 </RelativeLayout>

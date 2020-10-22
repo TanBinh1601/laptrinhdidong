@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_back"/>
+        <TextView
+            android:id="@+id/txtLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:onClick="backLogin"
+            android:textSize="30sp"
+            android:gravity="end"
+            android:textStyle="bold"
+            android:textColor="#2196F3"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTER NEW USER"
+            android:textColor="@color/colorPrimaryDark"
+
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-thin"/>
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:hint="User name"
+            android:layout_marginTop="40dp"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:textColorHint="#A6ACAB"
+            android:elevation="5dp"
+            android:background="@drawable/btn"/>
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:hint="E-MAIL"
+            android:layout_marginTop="10dp"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:textColorHint="#A6ACAB"
+            android:elevation="5dp"
+            android:background="@drawable/btn"/>
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:hint="PASSWORD"
+            android:layout_marginTop="10dp"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:textColorHint="#A6ACAB"
+            android:elevation="5dp"
+            android:background="@drawable/btn"/>
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:hint="CONFIRM PASSWORD"
+            android:layout_marginTop="10dp"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:textColorHint="#A6ACAB"
+            android:elevation="5dp"
+            android:background="@drawable/btn"/>
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:background="@drawable/button"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"
+            android:text="Đăng Kí"
+            android:textSize="18sp"
+            android:elevation="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

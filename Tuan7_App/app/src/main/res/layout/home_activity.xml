@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -27,22 +28,13 @@
         android:id="@+id/listview"
         android:divider="@color/black"
         android:dividerHeight="2dp"/>
-    <RelativeLayout
+    <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/endblue"
-        android:layout_alignParentBottom="true">
-        <ImageButton
-            android:layout_width="205dp"
-            android:layout_height="50dp"
-            android:src="@drawable/ic_home"
-            android:background="@color/endblue"/>
-        <ImageButton
-            android:id="@+id/btn_profile"
-            android:layout_width="205dp"
-            android:layout_height="50dp"
-            android:layout_alignParentRight="true"
-            android:src="@drawable/ic_account_info"
-            android:background="@color/endblue"/>
-    </RelativeLayout>
+        android:id="@+id/bottom_nv"
+        app:itemBackground="@color/colorPrimary"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_nv"
+        android:layout_alignParentBottom="true"/>
 </RelativeLayout>

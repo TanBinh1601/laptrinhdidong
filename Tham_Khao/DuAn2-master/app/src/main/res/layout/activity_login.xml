@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".LoginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_ute"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to UTE"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="#047cdb"
+            android:layout_marginTop="30dp"
+            android:textAllCaps="true"
+            android:textSize="30sp"/>
+
+        <EditText
+            android:background="@drawable/edit"
+            android:padding="5dp"
+            android:id="@+id/eUser"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:inputType="text"
+            android:elevation="5dp"
+            android:drawableLeft="@drawable/ic_person"
+            android:hint="User name"/>
+
+        <EditText
+            android:padding ="5dp"
+            android:background="@drawable/edit"
+            android:id="@+id/ePassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:elevation="5dp"
+            android:drawableLeft="@drawable/ic_lock"
+            android:password="true"
+            android:hint="Password"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/btnLogin"
+            android:textSize="20sp"
+            android:background="@drawable/button"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:layout_gravity="center"
+            android:textStyle="italic"
+            android:textColor="#047cdb"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="true"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="OR"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:paddingRight="40dp"
+                android:src="@drawable/ic_google"/>
+            <ImageView
+                android:paddingLeft="40dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/facebook"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <TextView
+            android:divider="?android:dividerHorizontal"
+            android:showDividers="middle"
+            android:id="@+id/txtSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="New User? Register Now"
+            android:onClick="OpenSignUpActi"
+            android:layout_gravity="center"
+            android:textColor="#1E8CE3"
+            android:textSize="23sp"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+</LinearLayout>
