@@ -18,6 +18,17 @@ public class MainActivity extends AppCompatActivity {
         private EditText etLi;
         private EditText etHoa;
         private MyDatabase myDatabase;
+        private void initView(){
+            btnThem = (Button) findViewById(R.id.btn_them);
+            btnSua = (Button) findViewById(R.id.btn_sua);
+            btnXoa = (Button) findViewById(R.id.btn_xoa);
+            etId = (EditText) findViewById(R.id.et_id);
+            etName = (EditText) findViewById(R.id.et_name);
+            etToan = (EditText) findViewById(R.id.et_toan);
+            etLi = (EditText) findViewById(R.id.et_li);
+            etHoa = (EditText) findViewById(R.id.et_hoa);
+
+        }
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
@@ -74,17 +85,5 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
             });
-        }
-
-        private void initView(){
-            btnThem = (Button) findViewById(R.id.btn_them);
-            btnSua = (Button) findViewById(R.id.btn_sua);
-            btnXoa = (Button) findViewById(R.id.btn_xoa);
-            etId = (EditText) findViewById(R.id.et_id);
-            etName = (EditText) findViewById(R.id.et_name);
-            etToan = (EditText) findViewById(R.id.et_toan);
-            etLi = (EditText) findViewById(R.id.et_li);
-            etHoa = (EditText) findViewById(R.id.et_hoa);
-
         }
 }
